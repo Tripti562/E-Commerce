@@ -55,10 +55,7 @@ button {
   display: flex;
   justify-content: space-between;
 }
-.tagline {
-  position: relative;
-  z-index: 1;
-}
+
 .circle {
   position: absolute;
   top: 21.2rem;
@@ -66,16 +63,18 @@ button {
 
 /* left-tagline */
 .tagline {
+  position: relative;
+  z-index: 1;
   margin-left: 9.7rem;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
 .taglinehead {
   font-family: "Roboto Serif";
-  font-weight: bold;
+  font-weight: 600;
+  width: 25rem;
   font-size: 3rem;
   padding-top: 5rem;
-  width: 25rem;
 }
 .head-describe {
   margin-top: 1.5rem;
@@ -174,6 +173,61 @@ button {
   text-align: center;
 }
 .third{
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  height: 50vh;
+  background-color: #AC9948;
+}
+.trendy, .trendy_describe{
+  color: white;
+}
+.trendy{
+  padding-top: 2rem;
+}
+.see_more{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.image_slider{
+  border: 1px solid red;
+}
+.trendyimg1{
+  height: 14rem;
+}
+.skyblue{
+  display: flex;
+}
+.box1{
+  background-color: white;
+  margin: 2rem;
   margin-top: 3rem;
 }
+.Blue, .star{
+  
+  font-size: .8rem;
+  font-weight: 550;
+  padding-left: .5rem;
+}
+.bxs-star{
+  color: #DBA312;
+}
+.gray{
+  color: rgb(195, 195, 195);
+}
+.star{
+  padding-top: .2rem;
+  padding-bottom: .5rem;
+}
+.price{
+  padding: .5rem;
+  /* font-weight: 550; */
+  font-size: .8rem;
+}
+del{
+  font-weight: 550;
+  color: gray;
+}
+
 
