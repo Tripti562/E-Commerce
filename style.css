@@ -4,6 +4,10 @@
   list-style-type: none;
   font-family: "Roboto", sans-serif;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 /* header */
 header {
   background-color: #e8ceb8;
@@ -16,21 +20,21 @@ nav {
   padding-left: 75px;
   padding-right: 100px;
 }
-ul {
+ul{
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 0.9rem;
   font-weight: 500;
   padding-left: 1rem;
-  padding-right: 1rem;
-  cursor: pointer;
+  padding-right: 1rem; 
 }
-li {
-  padding: 1rem;
+li{
+  cursor: pointer;
+  margin: 1rem;
 }
 li:hover {
-  color: gray;
+  color: #18988B;
   cursor: pointer;
 }
 button {
@@ -45,8 +49,9 @@ button {
   border: 1px solid black;
 }
 .btn-header:hover {
-  color: gray;
-  border-color: gray;
+  color: white;
+  background-color: #18988B;
+  border: none;
 }
 /* hero-section */
 .hero-section {
@@ -74,6 +79,9 @@ button {
   font-weight: 600;
   width: 25rem;
   font-size: 3rem;
+  
+}
+.main{
   padding-top: 5rem;
 }
 .head-describe {
@@ -82,11 +90,16 @@ button {
   width: 25rem;
   line-height: 1.6rem;
 }
-.shop {
+.shop{
   margin-bottom: 7rem;
   background-color: black;
   color: white;
   border: 1px solid black;
+}
+.shop:hover{
+  color: white;
+  background-color: #18988B;
+  border: 1px solid  #18988B;
 }
 /* right-img-herosection */
 .img-hero {
@@ -177,7 +190,7 @@ button {
   margin-top: 3rem;
   margin-bottom: 3rem;
   height: 50vh;
-  background-color: #AC9948;
+  background-color: #18988B;
 }
 .trendy, .trendy_describe{
   color: white;
@@ -230,4 +243,36 @@ del{
   color: gray;
 }
 
+/* Our Product Section */
 
+.our-product{
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product{
+  padding-top: 0rem;
+}
+.list{
+  margin-top: 1rem;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.Hot:hover, .On-Sale:hover, .Men:hover, .Kids:hover, .Women:hover {
+  color: #18988B;
+}
+/* product images */
+.container1{
+  display: flex;
+  flex-wrap:  wrap;
+  border: 1px solid red;
+}
+.con1{
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+
+}
