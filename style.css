@@ -20,7 +20,7 @@ nav {
   padding-left: 75px;
   padding-right: 100px;
 }
-ul{
+.head{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -281,4 +281,55 @@ del{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+/* Testimonials Section */
+/* .testimonial-section{
+  background-color: #FBF5F0;
+  height: 40vh;
+}
+.testimonial-head{
+  font-family: "Roboto Serif";
+  font-weight: 600;
+  font-size: 3rem;
+} */
+
+/* footer1 */
+.foot1{
+ background-color: #E9D0BC;
+}
+.footdivision{
+  margin-left: 6rem;
+  margin-right: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  grid-area: auto;
+}
+.logo{
+  border: 1px solid red;
+  margin-top: 2rem;
+}
+.logofoot{
+  margin-left: 3rem;
+}
+.foot-tagline{
+  margin-top: 1rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.3rem;
+}
+ .f{
+  margin: .4rem;
+ }
+ .f:hover{
+  color: #18988B;
+  text-decoration: underline;
+ }
+.Linksicons{
+  text-align: center;
+  margin-bottom: 2rem;
+  color: gray;
+  font-size: 1.3rem;
+  font-weight: 550;
+  /* border: 1px solid green; */
 }
