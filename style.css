@@ -76,10 +76,11 @@ button {
 .tagline {
   position: relative;
   z-index: 1;
-  /* margin-left: 9.7rem; */
-  /* display: grid; */
+  /* padding-left: 4rem; */
+  display: grid;
   grid-template-rows: 1fr 1fr .5fr;
 }
+
 .taglinehead {
   font-family: "Roboto Serif";
   font-weight: 600;
@@ -147,8 +148,9 @@ div.hero-section{
   /* margin-right: 9.7rem; */
   /* margin-left: 9.7rem; */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  /* width: 90%; */
   flex-wrap: wrap;
   margin-bottom: 5rem;
   border: 1px solid red;
@@ -156,11 +158,58 @@ div.hero-section{
 }
 
 .cimg1, .cimg2, .cimg3 {
-  padding-right: 1rem;
-  /* width: 300px; */
-  /* height: auto; */
+  padding: 1rem;
+  width: 300px;
+  height: auto;
 }
-
+.cimg1{
+  position: relative;
+display: flex;
+align-items: flex-end;
+transition: .6s all ease-out;
+}
+.cimg1:hover{
+  transform: translateY(15px);
+}
+.cimg1:hover:before{
+  opacity: 1;
+}
+.cimg1:hover, .overlay{
+  opacity: 1;
+  transform: translateY(0);
+}
+/* .cimg1 img{ */
+  /* display: block; */
+  /* border: 1px solid white;
+}
+.overlay{
+  
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: #eee;
+}
+.cimg1:hover, .overlay{ */
+  /* width: 100%; */
+  /* opacity: .2;
+}
+.text{
+  color: black; */
+  /* opacity: 1; */
+/* position: absolute;
+top: 50%;
+left:  50%;
+transform: translate(-50%, -50%);
+}
+.overlayLeft{
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+}
+.cimg1:hover, .overlayLeft{
+  width: auto;
+} */
 
 /* since2012 */
 .since2012{
@@ -170,7 +219,9 @@ div.hero-section{
     margin-bottom: 3rem;
     /* border: 1px solid green; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* align-items: center; */
 }
 .second{
     margin-left: 20px;
@@ -180,19 +231,20 @@ div.hero-section{
 }
 .rectangle{
     position: absolute;
-    left: 450px;
+    left: 550px;
     margin-top: 3.5rem;
     
     padding: 1rem;
     background-color: white;
     /* border: 1px solid red; */
     display: flex;
-    width: 50%;
+    width:50%;
     height: 18vh;
     justify-content: space-around;
     align-items: center;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
 }
+
 .year{
   font-family: "Roboto Serif";
   font-weight: bold;
@@ -227,13 +279,18 @@ div.hero-section{
 .image_slider{
   border: 1px solid red;
 }
-.trendyimg1{
-  height: 14rem;
-}
 .skyblue{
   display: flex;
+  /* justify-content: flex-start;
+  align-items: center; */
+  /* flex-wrap: wrap; */
 }
+
+
+
 .box1{
+  width: 80%;
+  border: 1px solid salmon;
   background-color: white;
   margin: 2rem;
   margin-top: 3rem;
@@ -326,7 +383,8 @@ del{
   /* margin-right: 6rem; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
   /* grid-area: auto; */
 }
 .logo{
@@ -378,7 +436,7 @@ footer .foot1 div.footdivision p, .logo ul li a.f{
 .boxmail {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   height: 30px;
   border: 1px solid #413919;
   margin-top: 1rem;
@@ -459,16 +517,15 @@ input[type=email]{
     margin-bottom: 0rem;
   }
   .tagline{
-    margin-left: 0rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    /* align-items: center; */
   }
   .taglinehead, .head-describe{
     width: 20rem;
-  }
-  .head-describe{
-    font-size: .8rem;
-    /* line-height: normal; */
   }
   .head-describe{
     margin-top: 0rem;
@@ -476,7 +533,6 @@ input[type=email]{
   }
   .taglinehead.main{
     padding-top: 0rem;
-    font-size: 2rem;
   }
   .img-hero1 {
     width: 304px;
@@ -487,40 +543,51 @@ input[type=email]{
   .collection-img{
     margin-left: 0rem;
     margin-right: 0rem;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
   }
-  .year{
+  .year, .taglinehead.main,  .since, .trendy{
     font-size: 2rem;
   }
-  .lorem1{
+  .lorem1,  .head-describe, .detail, .see_more, .shop{
     font-size: .8rem;
   }
   .second{
     margin-right: 0rem;
   }
-  .since{
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  .detail{
-    font-size: .8rem;
+  .since,   .detail, .trendy_describe, .trendy{
     margin-bottom: 1rem;
   }
   .rectangle{
-    /* position: absolute; */
     left: 250px;
     margin-top: 0rem;
-    
-    /* padding: 1rem; */
-    /* background-color: white; */
-    /* border: 1px solid red; */
-    /* display: flex; */
     width: 50%;
     height: 10vh;
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, .2); */
+}
+.footdivision{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.foologo{
+  margin-top: 0rem;
+}
+/* from here trendy img slider */
+i{
+  font-size: 1rem;
+  margin-left: 0rem;
+}
+.trendyimg1{
+  width: 180px;
+  height: auto;
+}
+.proimg{
+  border: 1px solid black;
+/* margin: 1rem; */
+}
+.box1{
+  width: 50%;
+  border: 1px solid salmon;
+  background-color: white;
+  /* margin: 2rem; */
+  margin-top: 2rem;
 }
 }
