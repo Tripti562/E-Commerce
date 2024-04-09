@@ -63,7 +63,7 @@ button {
   background-color: #eeddcc;
   /* height: 20%; */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-start;
 }
 .hero-section 
@@ -120,12 +120,12 @@ div.hero-section{
 }
 /* right-img-herosection */
 .img-hero {
-  /* border: 1px solid red; */
+  
   /* margin-right: 9.7rem; */
   margin-bottom: 4.4rem;
 }
 .img-hero1 {
-  /* border: 1px solid red; */
+ 
   width: 380px;
   /* object-position: 5px solid; */
   object-fit: cover;
@@ -153,7 +153,7 @@ div.hero-section{
   /* width: 90%; */
   flex-wrap: wrap;
   margin-bottom: 5rem;
-  border: 1px solid red;
+  
   
 }
 
@@ -162,54 +162,42 @@ div.hero-section{
   width: 300px;
   height: auto;
 }
+/* main-overlay */
 .cimg1{
   position: relative;
-display: flex;
-align-items: flex-end;
-transition: .6s all ease-out;
+  width: auto;
+  cursor: pointer;
 }
-.cimg1:hover{
-  transform: translateY(15px);
+.cimg1 img{
+  display: block;
+  width: 100%;
 }
-.cimg1:hover:before{
-  opacity: 1;
-}
-.cimg1:hover, .overlay{
-  opacity: 1;
-  transform: translateY(0);
-}
-/* .cimg1 img{ */
-  /* display: block; */
-  /* border: 1px solid white;
+
+.right{
+  padding-bottom: .5rem;
+  margin-left: 0.6rem;
 }
 .overlay{
-  
+  padding-bottom: 1.8rem;
+  padding-left: 1.8rem;
   position: absolute;
-  transition: all .3s ease;
-  opacity: 0;
-  background-color: #eee;
-}
-.cimg1:hover, .overlay{ */
-  /* width: 100%; */
-  /* opacity: .2;
-}
-.text{
-  color: black; */
-  /* opacity: 1; */
-/* position: absolute;
-top: 50%;
-left:  50%;
-transform: translate(-50%, -50%);
-}
-.overlayLeft{
-  height: 100%;
-  width: 0;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: white;
+  opacity: 0;
+  transition: .3s all linear;
 }
-.cimg1:hover, .overlayLeft{
-  width: auto;
-} */
+.overlay:hover{
+  opacity: 1;
+}
+
 
 /* since2012 */
 .since2012{
@@ -217,7 +205,7 @@ transform: translate(-50%, -50%);
     /* margin-left: 11rem; */
     /* margin-right: 11rem; */
     margin-bottom: 3rem;
-    /* border: 1px solid green; */
+    
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -236,7 +224,7 @@ transform: translate(-50%, -50%);
     
     padding: 1rem;
     background-color: white;
-    /* border: 1px solid red; */
+    
     display: flex;
     width:50%;
     height: 18vh;
@@ -260,24 +248,30 @@ transform: translate(-50%, -50%);
 }
 .third{
   display: flex;
+
   margin-top: 3rem;
   margin-bottom: 3rem;
   height: 30%;
   background-color: #18988B;
 }
-.trendy, .trendy_describe{
-  color: white;
-}
+
 .trendy{
+ 
   padding-top: 2rem;
 }
 .see_more{
   background-color: transparent;
+  
+  border: 1px solid black;
+}
+.see_more:hover{
+ 
   color: white;
   border: 1px solid white;
 }
 .image_slider{
-  border: 1px solid red;
+  
+  width: auto;
 }
 .skyblue{
   display: flex;
@@ -286,13 +280,33 @@ transform: translate(-50%, -50%);
   /* flex-wrap: wrap; */
 }
 
+.padding-left{
+  padding-left: 1rem;
+  margin-right: 1rem;
+  padding-right: 1rem;
+}
+.left{
+  padding-left: 4rem;
+}
+.third{
 
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
 
+}
+.eighty{
+  width: 70%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
 .box1{
-  width: 80%;
-  border: 1px solid salmon;
+  width: 100%;
+  /* border: 1px solid salmon; */
   background-color: white;
-  margin: 2rem;
+ 
   margin-top: 3rem;
 }
 .Blue, .star{
@@ -308,6 +322,8 @@ transform: translate(-50%, -50%);
   color: rgb(195, 195, 195);
 }
 .star{
+  display: flex;
+  flex-wrap: wrap;
   padding-top: .2rem;
   padding-bottom: .5rem;
 }
@@ -362,15 +378,7 @@ del{
   align-items: center;
 }
 /* Testimonials Section */
-/* .testimonial-section{
-  background-color: #FBF5F0;
-  height: 40vh;
-}
-.testimonial-head{
-  font-family: "Roboto Serif";
-  font-weight: 600;
-  font-size: 3rem;
-} */
+
 
 /* footer1 */
 .foot1{
@@ -389,7 +397,7 @@ del{
 }
 .logo{
   margin: 1rem;
-  /* border: 1px solid red; */
+  
   /* margin-top: 2rem; */
 }
 
@@ -447,8 +455,8 @@ footer .foot1 div.footdivision p, .logo ul li a.f{
 i{
  color: #413919;
  margin-right: .8rem;
- margin-left: .2rem;
-  font-size: 1.5rem;
+ /* margin-left: .2rem; */
+  font-size: 1rem;
 }
 input[type=email]{
   outline: none;
@@ -572,7 +580,7 @@ input[type=email]{
 }
 /* from here trendy img slider */
 i{
-  font-size: 1rem;
+  font-size: .8rem;
   margin-left: 0rem;
 }
 .trendyimg1{
