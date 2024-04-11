@@ -466,9 +466,6 @@ input[type="email"] {
 }
 
 @media (max-width: 1097px) {
-  body {
-    background-color: red;
-  }
   nav {
     padding: 0rem;
     margin-left: 2rem;
@@ -577,5 +574,31 @@ input[type="email"] {
 @media (max-width: 716px) {
   body {
     background-color: pink;
+  }
+  .img-hero{
+    margin-bottom: 1rem;
+  }
+  .hero-section{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .tagline{
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .eighty {
+    width: 90%;
+    padding-left: 0rem;
+    display: none;
+    flex-wrap: wrap;
+  }
+  .left, .rectangle{
+    display: none;
+  }
+  .cimg1{
+    width: 300px;
+  }
+  .third{
+    background-color: #e9d0bc;
   }
 }
