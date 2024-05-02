@@ -14,3 +14,10 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+document.getElementById('menu').addEventListener('click', function(){
+    console.log('clicke');
+    document.getElementById('menuham').classList.add('actives');
+})
+document.getElementById('btn-close').addEventListener('click', function(){
+    document.getElementById('menuham').classList.remove('actives');
+})
