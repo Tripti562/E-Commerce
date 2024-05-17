@@ -386,10 +386,17 @@ del {
   text-decoration-color: #18988b;
   text-decoration: underline;
 }
+.hey{
+  margin-top: 1rem;
+  color: #18988b;
+}
 .phone {
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
+}
+html{
+  scroll-behavior: smooth;
 }
 .phone a {
   color: #413919;
@@ -589,7 +596,7 @@ input[type="email"] {
 }
 #menuham{
   width: 300px;
-  height: 100vh;
+  height: 320px;
   position: absolute;
   top: 0;
   right: 0;
